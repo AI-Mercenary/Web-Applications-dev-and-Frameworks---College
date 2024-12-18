@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Ring Store</title>
+</head>
+<body>
+    <header>
+        <h1>Smart Ring Store</h1>
+        <nav>
+            <a href="javascript:void(0)" onclick="showSection('home')">Home</a> |
+            <a href="javascript:void(0)" onclick="showSection('products')">Products</a> |
+            <a href="javascript:void(0)" onclick="showSection('features')">Features</a> |
+            <a href="javascript:void(0)" onclick="showSection('order')">Order Now</a> |
+            <a href="javascript:void(0)" onclick="showSection('contact')">Contact</a>
+        </nav>
+    </header>
+    <section id="home">
+        <h2>Welcome</h2>
+        <p>Discover the latest in wearable technology with our Smart Rings.</p>
+        <div style="display: flex; gap: 20px; overflow-x: auto;">
+            <div style="flex: 0 0 auto; text-align: center;">
+                <h3>Smart Ring Model A</h3>
+                <img src="images/ring1.jpg" alt="Smart Ring A" style="width: 150px; height: auto; border-radius: 10px;">
+            </div>
+            <div style="flex: 0 0 auto; text-align: center;">
+                <h3>Smart Ring Model B</h3>
+                <img src="images/sm2.jpg" alt="Smart Ring B" style="width: 150px; height: auto; border-radius: 10px;">
+                <p>Stylish design. Price: $249</p>
+            </div>
+            <div style="flex: 0 0 auto; text-align: center;">
+                <h3>Smart Ring Model C</h3>
+                <img src="images/smg.jpg" alt="Smart Ring C" style="width: 150px; height: auto; border-radius: 10px;">
+                <p>Customizable. Price: $299</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Smart Ring Store. All rights reserved.</p>
+    </footer>
+    <script>
+        function showSection(sectionId) {
+            document.querySelectorAll("section").forEach(section => {
+                section.style.display = section.id === sectionId ? "block" : "none";
+            });
+        }
+        window.onload = () => showSection("home");
+    </script>
+</body>
+</html>
