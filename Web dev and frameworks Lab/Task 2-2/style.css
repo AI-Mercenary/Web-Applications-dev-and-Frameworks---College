@@ -1,24 +1,24 @@
 body {
     background-color: black;
-    color: white;
-    font-family: Arial, sans-serif;
 }
 
-h1 {
-    color: gold;
-    font-family: 'Times New Roman', serif;
-    text-align: center;
-    text-shadow: 2px 2px darkgray;
+
+
+h1{
+	color:white;
+	font-family:Times New Roman, Serif;
+	font-size:250%;
 }
 
-p {
-    color: tomato;
-    font-family: 'Courier New', monospace;
-    text-align: justify;
+p{
+	color:red;
+	font-family:'Courier New', monospace;
+	font-size:150%;
 }
 
-li {
-    color: limegreen;
-    font-family: 'Brush Script MT', cursive;
-    margin-left: 20px;
+li
+{
+	color:green;
+	font-family:'Brush Script MT', cursive;
+	font-size:150%;
 }
