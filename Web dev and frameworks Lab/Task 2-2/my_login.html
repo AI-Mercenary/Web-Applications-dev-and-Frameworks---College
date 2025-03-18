@@ -1,16 +1,23 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <link rel="stylesheet" href="style.css">
-    <h1>Login to Your Account to start shopping :)</h1>
-    <form action="dashboard.html" method="post">
-        <label for="username">Username:</label><br>
-        <input type="text" id="username" name="username" required><br>
-        <label for="password">Password:</label><br>
-        <input type="password" id="password" name="password" required><br><br>
-        <input type="submit" value="Login">
-    </form>
+    <div class="container">
+        <h1>Login to Your Account to start shopping :)</h1>
+        <div class="login-form">
+            <form action="dashboard.html" method="post">
+                <label for="username">Username:</label><br>
+                <input type="text" id="username" name="username" required><br>
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password" required><br><br>
+                <input type="submit" value="Login">
+            </form>
+        </div>
+    </div>
 </body>
 </html>
